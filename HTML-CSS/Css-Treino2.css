@@ -1,0 +1,16 @@
+
+body{
+    width: 80%;
+    margin:auto;
+    height: 50%;
+    height: 100%;
+
+        
+}
+
+header{
+    background-color: red;
+    width: 80%;
+    height: 80%;
+/*   podemos concluir agora que conteudo responsivo é aquele usando porcentagem. Pois mesmo com uma janala menor, ele considera a porcentagem dela.*/
+}

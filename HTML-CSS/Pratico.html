@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia,css, sla">
+    <style>
+        a[href$=".pdf"]:after{
+            content: url(Imagens/pdf-icon.gif);
+            display: inline-block;
+            
+        }
+        
+        input[type='checkbox']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='checkbox']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+        
+/*        voce tem que criar um input personalizado.Eu particulamente acho bem inutil, então só mudo o tamanho.*/
+        
+        </style>
+    
+    </head>
+    <body>
+        <h1>Exercicio Prático</h1>
+        <a href="Arquivos/pdf-xd.pdf" download="pdf-xd.pdf" type="aplication/pdf" >Faça download</a>
+        
+        
+        <input type="checkbox" name="Termos" value="Aceito">
+        <label>Li e aceito XD</label>
+        
+    </body>
+</html>

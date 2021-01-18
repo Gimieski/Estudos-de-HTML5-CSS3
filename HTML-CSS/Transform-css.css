@@ -1,0 +1,36 @@
+.div1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transform: translate(100px);
+/* desloca 2D o elemento*/
+    
+    
+}
+.div2{
+   background-color: blue;
+    width: 100px;
+    height: 50px; 
+    transform: rotate(40deg);
+    transform-origin: top left;
+/* rotaciona o grau do elemento.E origin defini a direçõ que vai estar o elemento transformado(usa de referencia o meio do elemento)*/
+    
+}
+
+.div3{
+    margin-top: 100px;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    transform: scale(2)
+/*    formata a escala(tamanho)do elemento*/
+    
+}
+.div4{
+    margin-top: 100px;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    transform: skewY(10deg)
+}
+/*  defini a deformidade do elemento em graus(usa a base do elemento como referencia(Y cima e baixo e X esquerda e direita)*/

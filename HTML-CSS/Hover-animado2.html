@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>HOVER ANIMADO IMAGENS </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia,css, sla">
+    <style>
+        .conteiner{
+            position: relative;
+            width: 30%;
+            
+        }
+        
+        .image{
+            display: block;
+            width: 100%;
+            background: rgba(0,0,0,0.6)        }
+
+        .overlay{
+            background: rgba(0,0,0,0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition:opacity 0.5s linear; 
+            text-align: center;
+            
+           
+            color: white;
+        }
+        
+        .overlay:hover{
+            opacity: 1;
+            
+        }
+        
+        .descricao, .tittle{
+            margin-top: 50px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+    
+       
+        </style>
+    
+    </head>
+    <body>
+        <h1>HOVER ANIMADO</h1>
+        
+       <div class="conteiner">
+       <img src="Arquivos/Imagens/thumbs/01.jpg" class="image">
+       <div class="overlay">
+       <div class="tittle">OLÁ</div>           
+       <p class="descricao">ola</p>       
+    </div>
+    </div> 
+        
+        
+    </body>
+</html>

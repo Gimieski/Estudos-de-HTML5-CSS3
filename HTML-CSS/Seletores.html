@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia,css, sla">
+        <link rel="icon" href="Arquivos/Mídias/favicon.ico" type="icon">
+</head>
+        <style>
+        article p>a{
+            background-color: black;
+        }
+        
+            article a b{
+                background-color: blueviolet;
+            }
+            
+        /*filho direto article p a>b{
+            background-color:red;
+            
+            porem, como o article é elemento pai, ele selecioa o b normalmente, mas se quisermos usar a estrutura DOM usamos os FILHOS
+        }. */
+        
+       article h3+p{
+            background-color:orange; /*selecionando o irmao mais proximo, por isso não funciona com a*/
+        }
+        
+        article h3~p{
+            border:solid green; 
+        }
+        </style>
+    <body>
+        <h1>Seletores</h1>
+        
+        <article>
+        <h3>Titulo</h3>
+        
+        <p>a
+        <a>a<b>a</b></a>    
+        </p>
+        
+        <p>a
+        <a>a<b>a</b></a>    
+        </p>
+        
+        <p>a
+        <a>a<b>a</b></a>    
+        </p>   
+        
+        </article>
+        
+        <p>aaa</p>
+    
+    
+    
+    
+    </body>
+</html>

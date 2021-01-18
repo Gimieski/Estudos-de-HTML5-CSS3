@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Oxygen , sans-serif";
+}
+
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+    
+/* Esta classe esta no header e em outros elementos.Mas para explica-la, ou usar o header como exemplo.Bom, como o "nome" ja esta dizendo ela vai limpar depois, ou seja depois(after) do header, que vem a nav.E o diplay block serve para separar essa parte que limpamos de outro elemento. */
+}
+
+.button{
+    display: inline-block;
+    background:#58c4c4;
+    padding:.75em 2.5em;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    transition-property:opacity;
+    transition-duration:1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .1s;
+}
+.button:hover{
+ opacity: 0.5;    
+}
+
+.icon-play{
+      height: 5em;
+    display: none;
+      
+    }
+.icon-play img{
+     width: 100%;
+    height: 100%;
+/* com isso, a imagem descendente, fica 100% m tamanho do conteiner. E então defnindoum tamanho do conteiner, ele segue.*/
+    }
+
+.top-header{
+    text-align: center;
+    
+/*Bom, text align funciona com icons, e svg resumidamente.E em relação sobre "por que não colocamos o margin aqui também.Bom, porque aqui definimos os padroes para o header lá definimos do proprio elemento*/
+}
+
+.img-header{
+  margin:.5em;    
+}
+
+.top-nav{
+    background:#612674;
+    text-align: center;
+}
+
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+/*no padding estamos definindo o enchimento dos elementos.no zero, não temos espaçamentos(no bloco do ul), porem vemos asseguir que entre os links dentro dos li tem padding.*/
+    list-style: none;
+}
+
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    font-size: 1em;
+    transition-property:background;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+.top-nav a:hover{
+    background:#7c3792; 
+}
+
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background: #f6f6f6;
+    
+}
+
+.top-content-tittle{
+    color: #612674;
+    font-size:1.375em; 
+    margin:1.375em; 
+      
+}
+
+.top-content-subtitle{
+    color:#a87bb7;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+.middle-content-tittle{
+    color: #652e78;
+    text-transform:uppercase;
+    font-size:1.25em; 
+}
+
+.middle-content{
+     background: #f6f6f6;
+     text-align: center;
+     padding: 2em;
+    
+}
+
+.middle-content p{
+    line-height: 1.5em;
+    color: #222;
+    
+}
+
+article span[class^=icon]{
+    font-size:2.5em;
+    color: #652e78;
+   
+}
+
+.main-content{
+    padding: 2em;
+}
+
+.main-content-tittle{
+    letter-spacing: .2em;
+    color: #652e78;
+}
+
+.main-article{
+    margin-bottom: 3em; 
+}
+
+.midle-footer{
+background:#25303e; 
+padding-bottom:2em; 
+text-align: center; 
+color: #83969f;    
+}
+
+.footer-menu{
+    background:#383d4c;
+    list-style: none;
+    margin:0;
+    padding: .5em;
+    
+}
+
+
+
+.footer-menu li{
+   display: inline-block; 
+   margin: 0 1em;
+   
+      
+}
+
+.footer-menu a{
+    font-size: 1.5em;
+    display:inline-block;
+    margin: 0 1em;
+    text-decoration: none;
+    color: white;
+    background:#004125;
+    padding:.30em; 
+    border-radius:6.25em; 
+}
+/*Media querie são breack points, pois quebram a linha*/
+@media screen and (min-width:48.25em){
+    
+    .top-content{
+        background: #521a66;
+       
+    }
+    
+    .top-content-tittle,.top-content-subtitle{
+        color: white;
+    }
+    
+    .img-header{
+        float: left;
+        margin-top: 1.56em;
+    }
+    
+    .top-nav{
+        float: right;
+        background: transparent;
+        margin-top:1.56em;
+        
+    }
+    
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .top-nav li{
+        display: inline-block;
+    }
+    
+    .top-nav a{
+        color: #713a84;
+        font-size: 1.2em;
+        
+    }
+    
+    .top-nav a:hover{
+        background-color:#e7d9fc; 
+    }
+    
+    .col-1-2{
+        float: left;
+        width: 44%;
+        margin: 3%;
+/*Bom, aqui estamos faendo uma grid improvisada pois não aprendemos ainda diplay grid. Porém isso funciona assim: Esse elemento é de bloco, então usando propriedades boxsizing(width) fazemos um padrão para cada elemento usar 44% do espaço, e matematicamente 6% vai pros lados(3% 2 lados 3x2) usando assim 100% de cada parte da section(igual antes, porém antes cada elemento ocupava sozinho 100%;*/
+    }
+    
+    .main-content .button{
+        float: right;
+    }
+    
+  
+    .icon-play{
+      height: 5em;
+        display: block;
+      
+    }
+.icon-play img{
+     width: 100%;
+    height: 100%;
+/* com isso, a imagem descendente, fica 100% m tamanho do conteiner. E então defnindoum tamanho do conteiner, ele segue.*/
+    }
+}
+
+@media screen and (min-width:62.5em){
+    .top-content{
+        background-color:#521a56;
+        background-image: url(Arquivos/Imagens/images/bg_topo_1198x670.jpg);
+        height: 25em;
+        padding: 5em;
+        box-sizing: border-box;
+         
+        
+        
+       }
+    icon-play{
+      height: 5em;
+        display: block;
+      
+    }
+.icon-play img{
+     width: 100%;
+    height: 100%;
+/* com isso, a imagem descendente, fica 100% m tamanho do conteiner. E então defnindoum tamanho do conteiner, ele segue.*/
+    }
+}
+
+@media screen and (min-width:74em){
+    .top-content{
+        background-image: url(Arquivos/Imagens/images/bg_topo_1600x1374.jpg);
+        background-position: center top;
+        padding: 25em 20em 22em;
+        height:45em;
+    }
+    
+    .col-1-2{
+        width: 23%;
+        margin: 1%;
+    }
+    
+    .col-1{
+        width:48%;
+        float: left;
+        margin: 1%;
+        margin-bottom: 2em;
+      
+    }
+    .midle-footer{
+        clear: both;
+    }
+    .main-content .button{
+        float: left;
+    }
+    
+   icon-play{
+      height: 5em;
+        display: block;
+      
+    }
+.icon-play img{
+     width: 100%;
+    height: 100%;
+/* com isso, a imagem descendente, fica 100% m tamanho do conteiner. E então defnindoum tamanho do conteiner, ele segue.*/
+    }
+}
+
+
+/*Para deixar mais legal aida, podiamos colocar um max-width para que sempre tenha um padrão. POis, co todas essas variações, acaba não criando um padrão de width*/

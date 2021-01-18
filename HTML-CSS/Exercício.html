@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia,css, sla">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a{
+            display: block;
+            width: 50%;
+            height: 50%;
+            margin: 10px;
+            position: relative;
+            
+        }
+        
+        a img{
+            width:100%;
+            display: block;
+            
+        }
+        a:hover:before{
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            background: rgba(0,0,0,0.6);
+            width: 100%;
+            height:100%;
+            
+            
+          
+         }
+        
+        a:hover:after{
+            content:"Veja mais";
+            display: block;
+            position: absolute;
+            border: 3px solid white;
+            color: white;
+            top: 46%;  /* ou podemos usar a propriedade transition fazendo: 50% e -50%*/
+            left: 30%;
+            padding: 5px 15px;
+            
+        }
+    </style>
+    
+    </head>
+    <body>
+        <h1>Hover nas Imagens</h1>
+        
+        <section>
+        
+        <article>
+        <a href="#">
+        <img src="Imagens/thumbs/01.jpg">    
+            
+        </a>    
+            
+        </article>    
+        
+        <article>
+        <a href="#">
+        <img src="Imagens/thumbs/02.jpg">    
+            
+        </a>    
+            
+        </article>    
+         
+        <article>
+        <a href="#">
+        <img src="Imagens/thumbs/03.jpg">    
+            
+        </a>    
+            
+        </article> 
+            
+        <article>
+        <a href="#">
+        <img src="Imagens/thumbs/04.jpg">    
+            
+        </a>    
+            
+        </article>
+            
+        <article>
+        <a href="#">
+        <img src="Imagens/thumbs/05.jpg">    
+            
+        </a>    
+            
+        </article>    
+            
+            
+        </section>
+
+    </body>
+</html>

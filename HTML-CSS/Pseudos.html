@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia,css, sla">
+    <style>
+        a:hover{
+            color: red;
+            
+        }
+        
+        a:visited{
+            color:blue;
+        }
+        
+        a::after {
+      content: "→";
+        }
+        .nome:focus {
+       color: red;
+      }
+
+        .sobrenome:focus {
+        color: lime;
+       }
+ 
+       p:last-child{
+        background-color: red;
+        }
+        
+        
+        div {
+       width: 80px;
+       height: 80px;
+       background-color: skyblue;
+       }
+
+.scaled {
+  transform: scale(0.7); /* iqual a scaleX(0.7) scaleY(0.7). E scale é o "tamanho" */
+  background-color: pink;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo CLasses e Pseudo ELementos</h1>
+    
+        <p><a href="#">XD</a>s
+         <a href="#">XD</a></p>
+        
+        <input class="nome" value="Esse elemento ficará vermelho quando focado">
+        <input class="sobrenome" value="Esse elemento ficará verde-limão quando focado">
+        
+        <div>Normal</div>
+        <div class="scaled">Redimensionado</div>
+        
+
+    </body>
+</html>

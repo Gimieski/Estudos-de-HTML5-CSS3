@@ -1,0 +1,64 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, 
+       tecnologia,css, sla">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style>
+        body{
+            width: 100%;
+        }
+        
+        .di{
+           width: 50%;
+           height: 50%;
+           margin-left: 25%;
+           
+        }    
+
+        .img1:hover{
+           transform: rotate(20deg);    
+        }
+
+        .img2:hover{
+           transform: rotate(-20deg);    
+        }
+
+        .img3:hover{
+           transform: rotate(-30deg);    
+        }
+
+        .img4:hover{
+           transform: rotate(20deg);    
+        }
+       
+        img{
+            float: left;
+            width: 50%;
+            height: 50%;
+            margin: 0;
+            transition-property: transform;
+           transition-timing-function: linear;
+           transition-duration: .5s;
+/*            a div vai ocupar 50% de tudo, e a cada imagem vai ocupar 50% do espaço da largura e altura, então não vai sobrar espaço para as imagens então elas vao ficar para esquerda com o float left*/
+        }
+        
+        
+    
+    </style>
+    
+    </head>
+    <body>
+       <div class="di">
+        <h1>Clique em uma das imagens</h1>
+        <a href="Link-imagens-pag2.html"><img src="Arquivos/Imagens/thumbs/01.jpg" class="img1"></a>
+        <a href="Link-imagens-pag2.html"><img src="Arquivos/Imagens/thumbs/02.jpg"  class="img2"></a>
+        <a href="Link-imagens-pag2.html"><img src="Arquivos/Imagens/thumbs/03.jpg"  class="img3"></a>
+        <a href="Link-imagens-pag2.html"><img src="Arquivos/Imagens/thumbs/04.jpg"  class="img4"></a>
+       </div> 
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> Icones e links </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia,css, sla">
+        <link rel="icon" href="Arquivos/favicon.ico" type="icon">
+        
+        <style>
+            a{
+                cursor:progress;
+            }
+            /* a ropriedade cursor edita o cursor do mouse.wait:esperando, pointer:a maousinha apotando, text:texto, help:ponto de interrogação e crosshair:quando arrasta a pagina. */
+        </style>
+    </head>
+    <body>
+        <h1>Links</h1>
+        
+        <p>Links são hiperlinks(endereço), que fazem hiper-ligações no www(word wibe web) por meio de endereços(URLS).</p>
+        
+        <!-- link interno cria uma endereço para ligar uma pagina a outra na mesma pagina.Já link externo é o endereço da pagina do ww. então podemos concluir que o link de download é um link interno-->
+    
+        <h2>Links Internos</h2>
+        <p>São aqueles links dentro da pagina,ou seja, aqueles feitos dentro do arquivo.Ex:</p>
+        <p><a href="Strata.html">Link interno para o projeto strata.</a></p>
+    
+        <h2>Links externos</h2>
+        <p>São links de outros lugares.Ex:</p>
+        <p><a href="https://www.riotgames.com/pt-br">Link para a RiotGames</a></p>
+   
+        <h2>Atributo target e rel</h2>
+        <h3>Target</h3>
+        <q cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/link">Define onde exibir o URL vinculado, como o nome de um contexto de navegação (uma guia, janela ou iframe). As seguintes palavras-chave têm significados especiais para onde carregar o URL</q>
+        
+        <h4>Valores</h4>
+        <p><b>_self:</b>Faz com que continue na mesma página o link.
+        <b> _blanck:</b>Faz com que abra em outra aba a pagina carregada.
+        </p>
+        
+        <h3>Rel</h3>
+        <q cite="https://cursos.alura.com.br/forum/topico-atributo-rel-na-tag-link-atributo-alt-na-tag-img-e-tag-figcaption-34342" >Rel é utilizado para falar qual é a categoria do arquivo que estamos linkando, por isso passamos o valor stylesheet para o atributo rel quando estamos linkando uma forma de estilo no atributo href</q>
+        
+        
+        <h4>Exemplos:</h4>
+        <p><a href="https://developer.mozilla.org/pt-PT/docs/Web/HTML/Atributos/rel" rel="next" target="_self">Devolper.com</a></p>
+        <p><a href="https://developer.mozilla.org/pt-PT/docs/Web/HTML/Atributos/rel" rel=next target="_blanck">Devolper.com</a></p>      
+
+        
+        <h2>Link para Download</h2>
+        <p>Outra coisa que aparece bastante em sites são os links para
+efetuar download de algum material em PDF, ou de um arquivo
+ZIP qualquer. A partir da versão HTML5, as âncoras receberam
+atributos especiais para isso. Basta fazer o link diretamente
+para o arquivo que se deseja efetuar o download e adicionar o
+atributo download com o valor configurado para o nome do
+arquivo a ser baixado e o atributo type para indicar ao
+navegador que tipo de arquivo está sendo baixado. Vamos ver:<p>
+        
+         <p><a href="Arquivos/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" download=""10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf type="application/pdf">Arquivo pdf</a></p>
+        
+         <p>Nesse pdf exprime as informações sobre dowload e tipos.Mas já adiantando, type:é o tipo de arquivo.download:coloca o arquivo que você deseja baixar.</p>
+        
+        <h2>Sobre o Icone</h2>
+        <p>Bom, sobre o icone, para colocarmos ele como icone de favorito,devemos ter um icone instalado,obviamente.Depois introduzimos ele no cabeçalho, com a tag "link". Com isso identificamos ele como link com o atributo "rel" e colocamos o icone com o atributo "href".</p>
+    </body>
+    
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Seletores xd</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, tecnologia,css, sla">
+        
+    <style>
+     
+        .article1 p {
+  color: maroon;
+}
+        .article1 p:nth-child(odd) {
+  color: goldenrod;
+}
+    /*o nth-child considera todos os filhos de article, conccluindo assim que ele considerou o h1 e assim foi para o 2 paragrafo a formatação.Se usassemos o nth-of-type, ele ignoraria o titulo e começaria os pares adiante. Teste:article p:nth-of-type(odd) {
+  color: goldenrod;
+} */
+        
+        .article1 h1:first-child{
+            border:solid
+        }
+       
+       /*first-child  significa "se este elemento for o primeiro filho de seu pai" então, se colocarmos um paragrafo ali, não daria pois ele não é o primeiro*/
+        
+        .article1 p:last-child{
+            border:solid;
+        }
+        
+         /*:last-childsignifica "se este elemento for o último filho de seu pai"*/
+        
+        
+         /*Então se quisermos editar apenas 1 elemento pai, usamos classe*/
+    </style>
+    
+    
+    </head>
+    <body>
+    <article class="article1">
+  <h1>Here's a Header</h1>
+  <p>I'm a paragraph with all kinds of information.</p>
+  <p>Let's add another paragraph for fun.</p>
+  <p>yadda yadda yadda</p>
+  <p>blah blah blah</p>
+  <p>yadda yadda yadda</p>
+  <h3>Here's a Subheader</h3>
+  <p>blah blah blah</p>
+  <p>And maybe just one more.</p>
+</article>
+       
+      <article>
+  <h1>Here's a Header</h1>
+  <p>I'm a paragraph with all kinds of information.</p>
+  <p>Let's add another paragraph for fun.</p>
+  <p>yadda yadda yadda</p>
+  <p>blah blah blah</p>
+  <p>yadda yadda yadda</p>
+  <h3>Here's a Subheader</h3>
+  <p>blah blah blah</p>
+  <p>And maybe just one more.</p>
+</article>      
+        
+    </body>
+</html>

@@ -1,0 +1,20 @@
+body{
+   width: 95%;
+   max-width: 600px;  /* definindo uma aegura maxima, não importa como esta a janela do browser, ele vai se adaptar */
+   margin: auto;
+   font-family: sans-serif;
+   line-height:1.5;  
+   background:url(Arquivos/Imagens/bg-2.jpg);
+   background-size: cover;
+   background-position:right bottom;
+   color: white;
+}
+/*Ali nos estamos utilizando padding no elemento, então ele não tem uma "largura por assim dizer,Entaõ o body fica resposivo.Mas isso não resposividade de verdade, pois estamos limitando o css*/
+main{
+    background-color: #00000051;
+    margin-top: 30px;
+    padding: 20px 40px;
+    border-radius:20px; 
+    text-align: center;
+}
+
