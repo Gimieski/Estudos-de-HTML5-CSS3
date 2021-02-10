@@ -243,7 +243,7 @@ color: #83969f;
 @media screen and (min-width:62.5em){
     .top-content{
         background-color:#521a56;
-        background-image: url(Arquivos/Imagens/images/bg_topo_1198x670.jpg);
+        background-image: url(../Arquivos/Imagens/images/bg_topo_1198x670.jpg);
         height: 25em;
         padding: 5em;
         box-sizing: border-box;
@@ -265,7 +265,7 @@ color: #83969f;
 
 @media screen and (min-width:74em){
     .top-content{
-        background-image: url(Arquivos/Imagens/images/bg_topo_1600x1374.jpg);
+        background-image: url(../Arquivos/Imagens/images/bg_topo_1600x1374.jpg);
         background-position: center top;
         padding: 25em 20em 22em;
         height:45em;

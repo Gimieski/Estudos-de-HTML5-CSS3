@@ -4,7 +4,7 @@ body{
    margin: auto;
    font-family: sans-serif;
    line-height:1.5;  
-   background:url(Arquivos/Imagens/bg-2.jpg);
+   background:url(../Arquivos/Imagens/bg-2.jpg);
    background-size: cover;
    background-position:right bottom;
    color: white;

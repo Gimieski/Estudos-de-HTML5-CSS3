@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+@keyframes circle {
+	0% {
+		transform: rotate(0deg) translateX(25px);
+	}
+	100% {
+		transform: rotate(360deg) translateX(25px);
+	}
+}
+
+@keyframes jump{
+            0%{
+              top:150px;
+            }
+            30%{
+              top:130px;
+            }
+            50%{
+              top:100px;
+            }
+            80%{
+              top:130px;
+            }
+            100%{
+              top:150px;
+            }
+        }
+
+.circle {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: DodgerBlue;
+	margin: 60px auto;
+	animation: circle 1s linear infinite;
+}
+
+.perso{
+	width:30px;
+	height: 30px;
+	background-color: red;
+	animation: jump 1s linear infinite;
+}
+</style>
+</head>
+<body>
+    <div class="circle"></div>
+	<div class="perso"></div>
+</body>
+</html>

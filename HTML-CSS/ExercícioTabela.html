@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,td,th{
+            border: 1px solid black;
+            border-spacing:0px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        td,th{
+            padding: 10px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JavaScript</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>Linguagem de Marcação</td>
+                <td>Linguagem de Estilo</td>
+                <td>Linguagem de Programação</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+               <td colspan="3">Juntas formam o triangulo da web</td>
+            </tr>
+            <tr>
+               <td colspan="3">Triangulo da web referece as linguagens usadas na web</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <tr>
+          <th>Primeiro Nome:</th>
+          <td>Ted</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Telefone:</th>
+          <td>8888-8888</td>
+        </tr>
+        <tr>
+          <td>9999-9999</td>
+        </tr>
+        </table>
+
+        <table>
+            <tr>
+              <th>Primeiro Nome:</th>
+              <td>Ted</td>
+            </tr>
+            <tr>
+                <td rowspan="2">HTML</td>
+                <td>Linguagem de marcação de Hipertexto</td>
+            </tr>
+            <tr>
+                <td>Hipertexto é um ducumento que se encaixa com outro</td>
+            </tr>
+
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+                    <legend>Email</legend>
+                    <input type="text">
+                    <legend>Senha</legend>
+                    <input type="password">
+                </fieldset>
+            </form>
+
+            <form method="GET">
+            <label>Qual o seu sexo</label>
+            <input type="radio" name="Genero" value="F">
+            <label>Feminino</label>
+            <input type="radio" name="Genero" value="M">
+            <!-- tem que te ro memso nome para não ser selecionado junto -->
+            <!-- O name é enviado para o php e o value também.Com isso o name é enviado como genero e o M como o valor
+             do genero.Podemos usar apenas o name, mas é recomendado usar o value junto como valor do name.Então podemos
+              dizer que o for e o id é só para conectar a etiqueta(label)com a entrada de dados(input)  -->
+            <label>Masculino</label>
+            <input type="submit"><input type="reset">
+            </form>
+
+            <form>
+                <select>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="SP">São paulo</option>
+                    <option value="SP">Minas</option>
+                    <option value="SP">São geronimo</option>
+                </select>
+                
+                <label>
+                    <input type="checkbox" name="HTML" value="html">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" name="CSS" value="CSS">
+                    CSS
+                </label>
+            </form>
+            
+            <textarea placeholder="Digite algo"></textarea>
+            
+              
+</body>
+</html>
