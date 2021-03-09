@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            width: 800px;
+            height: 400px;
+            background-color: burlywood;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-template-rows:100px 200px;
+        }
+        .grid-item:nth-child(even){
+            background-color: #999;
+        }
+        .grid-item:nth-child(odd){
+            background-color: #eee;
+        }
+
+
+        .grid1{
+            grid-column: 5;
+            grid-row: 2;
+        }
+        .grid4{
+            grid-row: 1 / 3;
+        }
+        /*  mudar a cor e estudar esse codigo */
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="grid-container">
+            <div class="grid-item grid1">1</div>
+            <div class="grid-item grid2">2</div>
+            <div class="grid-item grid3">3</div>
+            <div class="grid-item grid4">4</div>
+            <div class="grid-item grid5">5</div>
+            <div class="grid-item grid6">6</div>
+            <div class="grid-item grid7">7</div>
+            <div class="grid-item grid8">8</div>
+            <div class="grid-item grid9">9</div>
+            <div class="grid-item grid10">10</div>
+        </div>
+    </div>
+</body>
+</html>

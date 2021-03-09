@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Grid */
+.grid {
+	display: grid;
+}
+.logo {
+	grid-area: logo;
+}
+.nav {
+	grid-area: nav;
+}
+.content {
+	grid-area: content;
+}
+.sidenav {
+	grid-area: sidenav;
+}
+.advert {
+	grid-area: advert;
+}
+.footer {
+	grid-area: footer;
+}
+/* grid-area  especifica o tamanho e a localização de um item de grade dentro de uma grade, 
+contribuindo com uma linha, um vão ou nada (automático) para sua colocação de grade. Geralmente eu uso para ele especificar 
+essas informações dele para depois usar no grid-template-areas que define as areas do elementos especificados com grid-area
+em texto*/
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.grid-template-areas-1 {
+	grid-template-areas:
+		"logo nav advert"
+		"sidenav content advert"
+		"sidenav footer footer"
+		;
+}
+    </style>
+</head>
+<body>
+    <h1>grid-template-areas</h1>
+<section class="grid grid-template-areas-1">
+	<div class="item logo">logo</div>
+	<div class="item nav">nav</div>
+	<div class="item content">content</div>
+	<div class="item sidenav">sidenav</div>
+	<div class="item advert">advert</div>
+	<div class="item footer">footer</div>
+</section>
+</body>
+</html>
